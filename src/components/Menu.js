@@ -18,6 +18,8 @@ const Menu = () => {
           />
           <MenuItem text="Markets" icon={<IoMdAnalytics />} />
           <MenuItem text="Markets" icon={<IoMdAnalytics />} />
+          <MenuItem text="Markets" icon={<IoMdAnalytics />} />
+          <MenuItem text="Markets" icon={<IoMdAnalytics />} />
         </section>
         <section className="w-full h-[6rem] flex justify-center items-center border-t border-[#2A2F3C]">
           <span className="text-[30px] cursor-pointer">
