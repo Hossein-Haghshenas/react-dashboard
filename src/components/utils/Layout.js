@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <section className="relative w-[100vw] h-[100vh] bg-[#131722] text-[#ffffff75]">
-        <section className="absolute left-[5rem]">{children}</section>
+        <section className="absolute left-[5rem] w-[94%]">{children}</section>
         <Menu />
         <Footer />
       </section>
