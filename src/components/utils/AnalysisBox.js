@@ -30,12 +30,19 @@ const AnalysisBox = ({ data }) => {
           {scoreData?.map((item, index) => {
             const { id, name, score } = item;
             return (
-              <ScoreCard key={id} className={index === 0 && "!w-full"} name={name} score={score} bgGreen={score.includes("+")} bgRed={score.includes("-")} />
+              <ScoreCard
+                key={id}
+                className={index === 0 && "!w-full !bg-[#0759458f]"}
+                name={name}
+                score={score}
+                bgGreen={score.includes("+")}
+                bgRed={score.includes("-")}
+              />
             );
           })}
         </section>
         <section className="w-full">
-          <section className="relative w-full h-1 rounded-lg bg-gray-600 mt-4 before:absolute before:left-0 before:w-[80%] before:h-1 before:bg-green-500 before:rounded-xl"></section>
+          <section className="relative w-full h-1 rounded-lg bg-gray-600 mt-4 before:absolute before:left-0 before:w-[80%] before:h-1 before:bg-[#008665eb] before:rounded-xl"></section>
           <section className="w-full flex justify-between mt-1">
             <span>Short</span>
             <span>Neutral</span>
