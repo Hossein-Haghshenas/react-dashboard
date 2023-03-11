@@ -2,6 +2,8 @@ import { AiFillExclamationCircle } from "react-icons/ai";
 import FilterBar from "./../components/FilterBar";
 import AnalysisBox from "./../components/utils/AnalysisBox";
 import chartBg from "../assets/image/chart.jpg";
+import UpgradeBox from "../components/utils/UpgradeBox";
+import Post from "../components/utils/Post";
 
 const filterItems = [
   { id: 0, text: "EUR/USD" },
@@ -9,6 +11,21 @@ const filterItems = [
   { id: 2, text: "S&P500/USD" },
   { id: 3, text: "XAU/USD" },
 ];
+
+const analysisData = {
+  name: "H4",
+  date: "13Sep2023",
+  time: "20:43 PM",
+  scoreData: [
+    { id: 0, name: "Momentum", score: "A+" },
+    { id: 1, name: "Slapbet", score: "+1" },
+    { id: 2, name: "SOS", score: "-2" },
+    { id: 3, name: "Stop Hunt", score: "+1" },
+    { id: 4, name: "", score: "" },
+    { id: 5, name: "Pattern Score", score: "+36" },
+    { id: 6, name: "Cumm. Score", score: "+3" },
+  ],
+};
 
 const Dashboard = () => {
   return (
@@ -32,10 +49,10 @@ const Dashboard = () => {
         </section>
         {/* filter bar section */}
         <section className="flex justify-between items-center w-full bg-[#1A1F2D] px-10 rounded-lg overflow-hidden">
-          <FilterBar items={filterItems} />
+          <FilterBar items={filterItems} output={(item) => console.log(item)} />
           <p>more pairs soon!</p>
         </section>
-        <section className="flex justify-between items-center w-full h-[20rem] bg-[#1A1F2D] p-5 rounded-lg">
+        <section className="flex flex-wrap justify-around items-center w-full h-[25rem] bg-[#1A1F2D] p-5 rounded-lg">
           {/* market section */}
           <section className="flex justify-center items-center relative w-[30rem] h-full rounded-lg">
             <img className="absolute left-0 top-0 w-full h-full blur-sm border border-[#141928d1]" src={chartBg} alt="chart" />
@@ -44,8 +61,23 @@ const Dashboard = () => {
             </button>
           </section>
           {/* analysis section */}
-          <section>
-            <AnalysisBox data={{ name: "H4" }} />
+          <section className="h-full">
+            <AnalysisBox data={analysisData} />
+          </section>
+          <section className="h-full">
+            <UpgradeBox name="M15" />
+          </section>
+        </section>
+        {/* Latest Posts section */}
+        <section className="flex flex-col gap-4 w-full bg-[#1A1F2D] p-5 rounded-lg">
+          <h6>Latest Posts</h6>
+          <section className="flex justify-around items-center gap-4 w-full overflow-x-auto">
+            <Post />
+            <Post />
+            <Post />
+            <Post />
+            <Post />
+            <Post />
           </section>
         </section>
       </section>
