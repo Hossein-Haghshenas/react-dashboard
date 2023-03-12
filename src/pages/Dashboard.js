@@ -1,4 +1,4 @@
-import { AiFillExclamationCircle } from "react-icons/ai";
+import exclamationIcon from "../assets/image/icons/exclamation-circle.svg";
 import FilterBar from "./../components/FilterBar";
 import AnalysisBox from "./../components/utils/AnalysisBox";
 import chartBg from "../assets/image/chart.jpg";
@@ -42,8 +42,8 @@ const Dashboard = () => {
           <section className="flex items-center justify-center gap-1">
             <span>28</span>
             <span>Day Remaining</span>
-            <span className="mt-1 text-[18px]">
-              <AiFillExclamationCircle />
+            <span className="mt-1 text-[18px] w-4">
+              <img src={exclamationIcon} alt="" />
             </span>
           </section>
         </section>
@@ -52,9 +52,9 @@ const Dashboard = () => {
           <FilterBar items={filterItems} output={(item) => console.log(item)} />
           <p className="sm:pt-2">more pairs soon!</p>
         </section>
-        <section className="flex flex-wrap justify-center items-center gap-4 w-full h-[max-content] bg-[#1A1F2D] p-5 rounded-lg">
+        <section className="flex flex-wrap justify-center items-center gap-4 w-full h-[max-content] bg-[#1A1F2D] p-5 py-7 rounded-lg">
           {/* market section */}
-          <section className="flex justify-center items-center relative w-[30rem] sm:w-[15rem] h-[23rem] sm:h-[12rem] rounded-lg">
+          <section className="flex justify-center items-center relative w-[35rem] sm:w-[15rem] h-[23rem] sm:h-[12rem] rounded-lg">
             <img className="absolute left-0 top-0 w-full h-full blur-sm border border-[#141928d1] rounded-lg" src={chartBg} alt="chart" />
             <button className="relative py-4 px-10 bg-[#141928d1] border border-[#1b2646d1] rounded-md z-10 before:absolute before:top-[-5px] before:right-[-5px] before:w-4 before:h-4 before:bg-green-600 before:rounded-full">
               View Market
@@ -69,9 +69,9 @@ const Dashboard = () => {
           </section>
         </section>
         {/* Latest Posts section */}
-        <section className="flex flex-col gap-4 w-full bg-[#1A1F2D] p-5 rounded-lg mb-20">
+        <section className="flex flex-col gap-4 w-full bg-[#1A1F2D] p-5 rounded-lg mb-20 sm:mb-32">
           <h6>Latest Posts</h6>
-          <section className="flex justify-around items-center gap-4 pl-[20rem] w-full overflow-auto scrollbar-hide">
+          <section className="flex justify-center items-center gap-4 pl-[18rem] sm:pl-0 w-full overflow-scroll scrollbar-hide">
             <Post />
             <Post />
             <Post />
