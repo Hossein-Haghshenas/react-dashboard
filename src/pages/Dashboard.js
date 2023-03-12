@@ -1,4 +1,6 @@
+import { useMenuUpdate } from "../context/MenuContext";
 import exclamationIcon from "../assets/image/icons/exclamation-circle.svg";
+import menuIcon from "../assets/image/icons/menu/menu.svg";
 import FilterBar from "./../components/FilterBar";
 import AnalysisBox from "./../components/utils/AnalysisBox";
 import chartBg from "../assets/image/chart.jpg";
@@ -28,13 +30,19 @@ const analysisData = {
 };
 
 const Dashboard = () => {
+  const openMenu = useMenuUpdate();
   return (
     <>
       <section className="h-[90vh] flex flex-col gap-6 my-8 mx-12 sm:mx-4 overflow-auto scrollbar-hide">
         {/* welcome message section */}
-        <section>
-          <span className="font-bold">Adel Ghaeinian</span>
-          <span className="ml-2 font-thin">Welcome Back!</span>
+        <section className="flex justify-between items-center">
+          <section>
+            <span className="font-bold">Adel Ghaeinian</span>
+            <span className="ml-2 font-thin">Welcome Back!</span>
+          </section>
+          <section>
+            <img className="hidden sm:block" src={menuIcon} alt="" onClick={openMenu} />
+          </section>
         </section>
         {/* premium section */}
         <section className="flex sm:flex-col items-center gap-4">
