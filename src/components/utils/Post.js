@@ -1,8 +1,10 @@
-const Post = () => {
+import clsx from "clsx";
+
+const Post = ({ className }) => {
   return (
-    <>
-      <section className="w-[20rem] h-[10rem] bg-[#232835] rounded-lg"></section>
-    </>
+    <section>
+      <section className={clsx("w-[15rem] h-[10rem] bg-[#232835] rounded-lg")}></section>
+    </section>
   );
 };
 

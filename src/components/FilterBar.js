@@ -21,7 +21,7 @@ const FilterBar = ({ items, output }) => {
                 ? "relative before:absolute before:bottom-[-2px] before:h-1 before:w-full before:rounded-lg before:bg-[#00C2FF] text-[#00C2FF]"
                 : ""
             )}
-            textClassName="!text-[15px]"
+            textClassName="!text-[15px] sm:!text-[11px]"
             onClick={(e) => setSelectedItem(item.text)}
           />
         ))}

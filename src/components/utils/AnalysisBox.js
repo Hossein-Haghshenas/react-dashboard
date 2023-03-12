@@ -6,7 +6,7 @@ const AnalysisBox = ({ data }) => {
   const { name, date, time, scoreData } = data;
   return (
     <>
-      <section className="flex flex-col justify-center items-center w-[20rem] h-full rounded-lg bg-[#131722] p-4">
+      <section className="flex flex-col justify-center items-center w-[20rem] sm:w-[14rem] h-full sm:h-[max-content] rounded-lg bg-[#131722] p-4">
         {/* box header */}
         <section className="w-full flex justify-between items-center">
           <h5>

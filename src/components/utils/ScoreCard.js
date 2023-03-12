@@ -5,7 +5,7 @@ const ScoreCard = ({ score, name, bgGreen, bgRed, className }) => {
     <>
       <section
         className={clsx(
-          "w-[8.75rem] h-[3rem] flex flex-col justify-center items-center bg-[#171B25] rounded-sm",
+          "w-[8.75rem] sm:w-full h-[3rem] flex flex-col justify-center items-center bg-[#171B25] rounded-lg",
           bgGreen && "bg-[#07594533]",
           bgRed && "bg-[#56202D]",
           className && className

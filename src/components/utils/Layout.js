@@ -3,11 +3,13 @@ import Footer from "../Footer";
 
 const Layout = ({ children }) => {
   return (
-    <>
-      <section className="absolute left-[5rem] w-[90%] h-full overflow-auto scrollbar-hide">{children}</section>
+    <section className="flex">
       <Menu />
-      <Footer />
-    </>
+      <section className="w-[92vw] md:w-[80vw] h-[100vh] overflow-hidden">
+        <section className="w-full overflow-auto scrollbar-hide">{children}</section>
+        <Footer />
+      </section>
+    </section>
   );
 };
 

@@ -6,7 +6,7 @@ import MenuItem from "./utils/MenuItem";
 const Menu = () => {
   return (
     <>
-      <section className="absolute flex flex-col justify-between left-0 h-full w-[6rem] bg-[#1A1F2D] z-30">
+      <section className="flex flex-col justify-between h-[100vh] w-[8vw] md:w-[20vw] bg-[#1A1F2D] z-30 overflow-auto scrollbar-hide">
         <section className="mt-2">
           <Avatar name="Account" />
         </section>
