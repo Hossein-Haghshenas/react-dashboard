@@ -71,7 +71,7 @@ const Dashboard = () => {
         {/* Latest Posts section */}
         <section className="flex flex-col gap-4 w-full bg-[#1A1F2D] p-5 rounded-lg mb-20 sm:mb-32">
           <h6>Latest Posts</h6>
-          <section className="flex justify-center items-center gap-4 pl-[18rem] sm:pl-0 w-full overflow-scroll scrollbar-hide">
+          <section className="flex gap-4 overflow-x-auto scrollbar-hide">
             <Post />
             <Post />
             <Post />
