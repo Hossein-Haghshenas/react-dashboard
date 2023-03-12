@@ -2,9 +2,9 @@ import { useMenuUpdate } from "../context/MenuContext";
 import exclamationIcon from "../assets/image/icons/exclamation-circle.svg";
 import menuIcon from "../assets/image/icons/menu/menu.svg";
 import FilterBar from "./../components/FilterBar";
-import AnalysisBox from "./../components/utils/AnalysisBox";
+import AnalysisBox from "../components/AnalysisBox";
 import chartBg from "../assets/image/chart.jpg";
-import UpgradeBox from "../components/utils/UpgradeBox";
+import UpgradeBox from "../components/UpgradeBox";
 import Post from "../components/utils/Post";
 
 const filterItems = [

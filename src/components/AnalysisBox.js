@@ -1,7 +1,7 @@
-import arrowLeft from "../../assets/image/icons/arrow-alt-circle-left.svg";
-import arrowRight from "../../assets/image/icons/arrow-alt-circle-right.svg";
-import arrowDown from "../../assets/image/icons/arrow-down-square.svg";
-import ScoreCard from "./ScoreCard";
+import arrowLeft from "../assets/image/icons/arrow-alt-circle-left.svg";
+import arrowRight from "../assets/image/icons/arrow-alt-circle-right.svg";
+import arrowDown from "../assets/image/icons/arrow-down-square.svg";
+import ScoreCard from "./utils/ScoreCard";
 
 const AnalysisBox = ({ data }) => {
   const { name, date, time, scoreData } = data;
