@@ -1,5 +1,6 @@
-import { BsFileEarmarkArrowDownFill } from "react-icons/bs";
-import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
+import arrowLeft from "../../assets/image/icons/arrow-alt-circle-left.svg";
+import arrowRight from "../../assets/image/icons/arrow-alt-circle-right.svg";
+import arrowDown from "../../assets/image/icons/arrow-down-square.svg";
 import ScoreCard from "./ScoreCard";
 
 const AnalysisBox = ({ data }) => {
@@ -12,8 +13,8 @@ const AnalysisBox = ({ data }) => {
           <h5>
             <span className="text-white">{name}</span> Analysis
           </h5>
-          <span>
-            <BsFileEarmarkArrowDownFill />
+          <span className="w-4">
+            <img src={arrowDown} alt="" />
           </span>
         </section>
         <section className="w-full flex justify-between items-center mt-3">
@@ -22,8 +23,8 @@ const AnalysisBox = ({ data }) => {
             <span className="text-[#f1f1f1] pl-2">{time}</span>
           </p>
           <section className="flex gap-2">
-            <IoIosArrowDropleft className="text-[20px]" />
-            <IoIosArrowDropright className="text-[20px]" />
+            <img className="w-4" src={arrowLeft} alt="" />
+            <img className="w-4" src={arrowRight} alt="" />
           </section>
         </section>
         <section className="w-full flex justify-center items-center flex-wrap gap-2 mt-3">
