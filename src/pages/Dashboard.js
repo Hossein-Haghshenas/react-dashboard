@@ -48,7 +48,7 @@ const Dashboard = () => {
           </section>
         </section>
         {/* filter bar section */}
-        <section className="flex md:flex-col-reverse justify-between items-center w-full bg-[#1A1F2D] px-10 rounded-lg overflow-hidden">
+        <section className="flex md:flex-col-reverse justify-between items-center w-full bg-[#1A1F2D] px-10 rounded-lg">
           <FilterBar items={filterItems} output={(item) => console.log(item)} />
           <p className="sm:pt-2">more pairs soon!</p>
         </section>

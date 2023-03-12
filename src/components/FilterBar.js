@@ -11,7 +11,7 @@ const FilterBar = ({ items, output }) => {
 
   return (
     <>
-      <section className="flex gap-4">
+      <section className="flex gap-4 sm:gap-2">
         {items?.map((item) => (
           <MenuItem
             text={item.text}

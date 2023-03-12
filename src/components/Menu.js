@@ -23,7 +23,7 @@ const Menu = () => {
           <MenuItem text="Markets" icon={<img src={chartsIcon} alt="" />} />
         </section>
         <section className="w-full py-[2rem] flex justify-center items-center border-t border-[#2A2F3C]">
-          <span className="cursor-pointer rotate-180">
+          <span className="cursor-pointer rotate-180 w-10 sm:w-5">
             <img src={arrowIcon} alt="" />
           </span>
         </section>
