@@ -1,7 +1,7 @@
 const UpgradeBox = ({ name }) => {
   return (
     <>
-      <section className="flex flex-col w-[20rem] sm:w-[14rem] h-full rounded-lg bg-[#131722] p-4">
+      <section className="flex flex-col w-[20rem] sm:w-[18rem] h-full rounded-lg bg-[#131722] p-4">
         {/* box header */}
         <section className="h-[1rem]">
           <h5>

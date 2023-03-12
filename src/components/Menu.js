@@ -11,12 +11,12 @@ const Menu = () => {
   const isOpen = useMenu();
   const closeMenu = useMenuUpdate();
   return (
-    <section className={clsx("sm:absolute sm:transition-all z-50", isOpen ? "sm:top-[0]" : "sm:top-[-30rem]")}>
+    <section className={clsx("sm:absolute sm:transition-all sm:duration-300 z-50", isOpen ? "sm:top-[0]" : "sm:top-[-60rem]")}>
       <section className="flex flex-col justify-between h-[100vh] w-[8vw] lg:[12vw] md:w-[16vw] sm:w-[100vw] bg-[#1A1F2D] overflow-auto scrollbar-hide">
         <section className="hidden sm:block">
           <img className="mt-8 ml-8" src={closeIcon} alt="" onClick={closeMenu} />
         </section>
-        <section className="mt-2">
+        <section className="mt-2 sm:mt-0 sm:mb-2">
           <Avatar name="Account" />
         </section>
         <section className="flex flex-col gap-4">

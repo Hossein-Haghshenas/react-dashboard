@@ -11,7 +11,7 @@ const FilterBar = ({ items, output }) => {
 
   return (
     <>
-      <section className="flex gap-4 sm:gap-2">
+      <section className="flex gap-4">
         {items?.map((item) => (
           <MenuItem
             text={item.text}
@@ -21,7 +21,7 @@ const FilterBar = ({ items, output }) => {
                 ? "relative before:absolute before:bottom-[-2px] before:h-1 before:w-full before:rounded-lg before:bg-[#00C2FF] text-[#00C2FF]"
                 : ""
             )}
-            textClassName="!text-[15px] sm:!text-[11px]"
+            textClassName="!text-[15px] sm:!text-[13px]"
             onClick={(e) => setSelectedItem(item.text)}
           />
         ))}
